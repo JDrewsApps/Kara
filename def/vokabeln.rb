@@ -54,16 +54,16 @@ case g
 	  end
 	end
   else
-    ap1 = Input(kara,tools,world,app_path,menu,"","s","abfrage/neues Fach erstellen/vokabeln Fach zuweisen/vokabeln löschen/ende","","")
-    if ap1 == "abfrage"
+    ap1 = Input(kara,tools,world,app_path,menu,"","s","Abfrage/Neues Fach erstellen/Vokabeln Fach zuweisen/Vokabeln löschen/Ende","","")
+    if ap1 == "Abfrage"
       g = 1
-    elsif ap1 == "neues Fach erstellen"
+    elsif ap1 == "Neues Fach erstellen"
       g = 5
-    elsif ap1 == "vokabeln Fach zuweisen"
+    elsif ap1 == "Vokabeln Fach zuweisen"
       g = 6
-    elsif ap1 == "vokabeln löschen"
+    elsif ap1 == "Vokabeln löschen"
       g = 3
-    elsif ap1 == "ende"
+    elsif ap1 == "Ende"
       g = 4
     end
   end
@@ -274,10 +274,10 @@ case g
 	        if yyy == "ja"
 	          yy1 = y1.to_i+1
 	          if yy1<8
-                Output(kara,tools,world,app_path,menu,"diese vokabel ist jetzt in lv.#{yy1}","","")
+                Output(kara,tools,world,app_path,menu,"diese Vokabel ist jetzt in lv.#{yy1}","","")
 	          end
 	          if yy1 == 8
-                Output(kara,tools,world,app_path,menu,"diese vokabel ist jetzt in lv.8 kara hofft das du die jetzt kannst","","")
+                Output(kara,tools,world,app_path,menu,"diese Vokabel ist jetzt in lv.8 kara hofft das du die jetzt kannst","","")
 	          end
 	          ww = yy1.to_s+"^"+y2+"^"+y3+"^"+tt
 	          h = h+ww+"\r\n"

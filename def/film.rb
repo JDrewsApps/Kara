@@ -60,18 +60,18 @@ while not k == 5
           end
         end
       else
-    ap1 = Input(kara,tools,world,app_path,menu,"","s","film abspielen/[film erstellen]/[film bearbeiten]/film löschen/gif abspielen/ende","","")
-    if ap1 == "film abspielen"
+    ap1 = Input(kara,tools,world,app_path,menu,"","s","Film abspielen/[Film erstellen]/[Film bearbeiten]/Film löschen/Gif abspielen/Ende","","")
+    if ap1 == "Film abspielen"
       k = 1
-    elsif ap1 == "[film erstellen]"
+    elsif ap1 == "[Film erstellen]"
       k = 2
-    elsif ap1 == "[film bearbeiten]"
+    elsif ap1 == "[Film bearbeiten]"
       k = 3
-    elsif ap1 == "film löschen"
+    elsif ap1 == "Film löschen"
       k = 4
-    elsif ap1 == "ende"
+    elsif ap1 == "Ende"
       k = 5
-    elsif ap1 == "gif abspielen"
+    elsif ap1 == "Gif abspielen"
       k = 6
     end
     end

@@ -139,9 +139,9 @@ app_path = pack[8]
     else
         z = 0
         while z == 0
-          y = Input(kara,tools,world,app_path,menu,"Wähle ein Spiel für einen Bonus:","s","Mathe/Blatt suche/TTK/Blatt fressen/Finde Kara/Kara Run/Gedächnis Games/Acade Games/Color Switch Games/Zurück","","")
+          y = Input(kara,tools,world,app_path,menu,"Wähle ein Spiel für einen Bonus:","s","Mathe/Blatt suche/TTK/Blatt fressen/Finde Kara/Kara Run/Gedächnis Games/Acade Games/Color Switch Games/Ende","","")
           case y
-            when "Zurück"
+            when "Ende"
               z = 1
             when "Mathe"
               set_shop(pack,xxx,1)
@@ -158,15 +158,15 @@ app_path = pack[8]
             when "Gedächnis Games"
               zz = 0
               while zz == 0
-                yy = Input(kara,tools,world,app_path,menu,"","s","leicht/schwer/extrem/Zurück","","")
+                yy = Input(kara,tools,world,app_path,menu,"","s","Leicht/Schwer/Extrem/Zurück","","")
                 case yy
                   when "Zurück"
                     zz = 1
-                  when "leicht"
+                  when "Leicht"
                     set_shop(pack,xxx,2)
-                  when "schwer"
+                  when "Schwer"
                     set_shop(pack,xxx,3)
-                  when "extrem"
+                  when "Extrem"
                     set_shop(pack,xxx,9)
                 end
               end

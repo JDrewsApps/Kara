@@ -18,45 +18,48 @@ while x == ""
   for hx in 2..4
     for hy in 10..12
       if world.isMushroom(hx,hy)
-        x = "open"
+        x = "Lesen"
       end
     end
   end
   for hx in 2..4
     for hy in 17..19
       if world.isMushroom(hx,hy)
-        x = "write"
+        x = "Schreiben"
       end
     end
   end
   for hx in 2..4
     for hy in 24..26
       if world.isMushroom(hx,hy)
-        x = "löschen"
+        x = "Löschen"
       end
     end
   end
   for hx in 2..4
     for hy in 31..33
       if world.isMushroom(hx,hy)
-        x = "ende"
+        x = "Ende"
       end
     end
   end
 end
 else
-x = Input(kara,tools,world,app_path,menu,"","s","write/open/löschen/ende","","")
+x = Input(kara,tools,world,app_path,menu,"","s","Lesen/Schreiben/Löschen/Ende","","")
 end
 i = 0
 world.clearAll
 world.setSize(1,1)
 case x
-  when "write"
+  when "Schreiben"
   e = 0
   k = ""
   
   namee = Input(kara,tools,world,app_path,menu,"name des Empfengers","s","","","")
   nachricht = Input(kara,tools,world,app_path,menu,"gib die nachricht an den Empfenger ein","s","","","")
+  if not File.file?(global_path+namee+"mail.txt")
+	File.new(global_path+namee+"mail.txt", "w+")
+  end
   f = File.open(global_path+namee+"mail.txt")
   f.each do |line|
     e = e + 1
@@ -71,9 +74,12 @@ case x
   ff = File.new(global_path+namee+"mail.txt","w+")
   ff.puts(k)
   ff.close
-  when "open"
+  when "Lesen"
     k = ""
     e = 0
+    if not File.file?(global_path+name+"mail.txt")
+	  File.new(global_path+name+"mail.txt", "w+")
+    end
     f = File.open(global_path+name+"mail.txt")
     f.each do |line|
       e = e + 1
@@ -90,9 +96,9 @@ case x
       end
     end
     Output(kara,tools,world,app_path,menu,k,"","")
-  when "ende"
+  when "Ende"
   kk = 1
-  when "löschen"
+  when "Löschen"
   File.new(global_path+name+"mail.txt","w+")
 end
 end

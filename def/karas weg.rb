@@ -11,23 +11,28 @@ app_path = pack[8]
 k = 0
 world.setSize(9,9)
 `"#{my_path}"mouse zoomKara`
+if not File.file?(global_path+"karas_weg.txt")
+    File.new(global_path+"karas_weg.txt", "w+")
+end
 while k == 0
 8.times do
 world.clearAll
-
-h = File.open(global_path + "blatt.txt")
-a = h.readline
-x = a.length/2
-y = 0
-z = 1
-x.times do
-    b = a[y]
-    c = a[z]
-    world.setLeaf(b.chr.to_i,c.chr.to_i,true)
-    tools.checkState
-    y = y + 2
-    z = z + 2
-  end 
+size = File.size(global_path + "karas_weg.txt")
+if not size == 0
+	h = File.open(global_path + "karas_weg.txt")
+	a = h.readline
+	x = a.length/2
+	y = 0
+	z = 1
+	x.times do
+	    b = a[y]
+	    c = a[z]
+	    world.setLeaf(b.chr.to_i,c.chr.to_i,true)
+	    tools.checkState
+	    y = y + 2
+	    z = z + 2
+	  end 
+end
 tools.sleep(2000)
 tools.checkState
 end

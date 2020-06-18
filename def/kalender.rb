@@ -9,7 +9,7 @@ ip = pack[6]
 name = pack[7]
 app_path = pack[8]
     k = 0
-    zz = Input(kara,tools,world,app_path,menu,"gib ein datum ein oder heute","s","","","")
+    zz = Input(kara,tools,world,app_path,menu,"gib ein Datum ein oder heute","s","","","")
     z = 1
     xx = 0
     ts = ""
@@ -98,11 +98,11 @@ app_path = pack[8]
     ji = js.to_i
     dt = Time.mktime(ji,mi,ti)
     if ji<140
-      Output(kara,tools,world,app_path,menu,"kara kent nur die Jahre ab 140 n.Chr","","")
+      Output(kara,tools,world,app_path,menu,"kara kennt nur die Jahre ab 140 n.Chr","","")
       k = 1
     end
     if ji>10000
-      Output(kara,tools,world,app_path,menu,"kara kent nur die Jahre bis 10.000 n.Chr","","")
+      Output(kara,tools,world,app_path,menu,"kara kennt nur die Jahre bis 10.000 n.Chr","","")
       k = 1
     end
     if k == 0

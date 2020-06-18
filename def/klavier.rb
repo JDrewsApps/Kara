@@ -53,7 +53,7 @@ while not k == 5
         end
       end
     else
-    ap1 = Input(kara,tools,world,app_path,menu,"","s","Noten spielen/Lied schreiben/Lied spielen/Lied löschen/ende","","")
+    ap1 = Input(kara,tools,world,app_path,menu,"","s","Noten spielen/Lied schreiben/Lied spielen/Lied löschen/Ende","","")
     if ap1 == "Noten spielen"
       k = 1
     elsif ap1 == "Lied schreiben"
@@ -62,7 +62,7 @@ while not k == 5
       k = 3
     elsif ap1 == "Lied löschen"
       k = 4
-    elsif ap1 == "ende"
+    elsif ap1 == "Ende"
       k = 5
     end
     end
@@ -352,13 +352,13 @@ while not k == 5
     when 2
       Output(kara,tools,world,app_path,menu,"achte darauf das alles richtig eingegeben ist sonst gibt es beim abspielen probleme","","")
       l = 0
-      Dir.glob(my_path+"ton/*.jdkt") do |rb_file|
+      Dir.glob(my_path+"klavier/*.jdkt") do |rb_file|
         l = l+1
       end
       if not l > 9
         p = Input(kara,tools,world,app_path,menu,"gib einen namen ein","s","","","")
         pp = Input(kara,tools,world,app_path,menu,"gib die noten ein","s","","","")
-        y = File.new(my_path+"ton/"+p+".jdkt","w+")
+        y = File.new(my_path+"klavier/"+p+".jdkt","w+")
         y.puts(pp)
         y.close
       else

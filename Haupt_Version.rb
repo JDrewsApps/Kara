@@ -66,9 +66,9 @@
 #               Spiel Tetris hinzu              09.09.2017      57
 #-----------------------------------------------------------------------------
 #bitte alles entsprechend anpassen
-my_path = ""              									#path zum kara ordner
+my_path = ""                                                #path zum kara ordner
 menu = "normal"		                                        #art der auswahl[normal/app]
-global_path = ""          									#path zum netzwerk ordner (nur für mehrspieler Programme erforderlich)
+global_path = ""                                            #path zum netzwerk ordner (nur für mehrspieler Programme erforderlich)
 ip = ""	                                                    #ip adresse
 name = ""                                                   #Name für kara-mails
 key_control = true                                          #true für eine Steuerung über die Tastatur
@@ -158,7 +158,7 @@ system("Taskkill /IM KaraBluetooth.exe /F")
 system("Taskkill /IM KaraBluetoothConsole.exe /F")
 Startbild(pack)
 tools.checkState
-zeigeBuchstaben(pack,"version: 57.3",false)
+zeigeBuchstaben(pack,"version: 57.4",false)
 tools.checkState()
 tools.sleep(1500)
 if menu == "app"

@@ -115,19 +115,19 @@ app_path = pack[8]
             when "Ged√§chnis Games"
               zz = 0
               while zz == 0
-                yy = Input(kara,tools,world,app_path,menu,"","s","leicht/schwer/extrem/Zur√ºck","","")
+                yy = Input(kara,tools,world,app_path,menu,"","s","Leicht/Schwer/Extrem/Zur√ºck","","")
                 case yy
                   when "Zur√ºck"
                     zz = 1
-                  when "leicht"
+                  when "Leicht"
                     ged‰chnis_l(pack)
                     world.clearAll
                     world.setSize(1,1)
-                  when "schwer"
+                  when "Schwer"
                     ged‰chnis_s(pack)
                     world.clearAll
                     world.setSize(1,1)
-                  when "extrem"
+                  when "Extrem"
                     ged‰chnis_e(pack)
                     world.clearAll
                     world.setSize(1,1)

@@ -167,7 +167,7 @@ while not gg == 3
     case gg
       when 0
         if not menu == "app"
-        xx = "^ selber malen~^ bild malen~^ zurück"
+        xx = "^ selber malen~^ bild malen~^ ende"
         zeigeBuchstaben(pack,xx,true)
         while gg == 0
           for hx in 2..4
@@ -193,12 +193,12 @@ while not gg == 3
           end
         end
         else
-          ggt = Input(kara,tools,world,app_path,menu,"","s","selber malen/bild malen/zurück","","")
-          if ggt == "selber malen"
+          ggt = Input(kara,tools,world,app_path,menu,"","s","Selber malen/Bild malen/Ende","","")
+          if ggt == "Selber malen"
             gg = 1
-          elsif ggt == "bild malen"
+          elsif ggt == "Bild malen"
             gg = 2
-          elsif ggt == "zurück"
+          elsif ggt == "Ende"
             gg = 3
           end
         end
@@ -230,12 +230,12 @@ while not gg == 3
           end
         end
         else
-          ggt = Input(kara,tools,world,app_path,menu,"","s","farbig/schwarz weiss/zurück","","")
-          if ggt == "farbig"
+          ggt = Input(kara,tools,world,app_path,menu,"","s","Farbig/Schwarz weiss/Zurück","","")
+          if ggt == "Farbig"
             gg = 4
-          elsif ggt == "schwarz weiss"
+          elsif ggt == "Schwarz weiss"
             gg = 5
-          elsif ggt == "zurück"
+          elsif ggt == "Zurück"
             gg = 0
           end
         end
@@ -369,12 +369,12 @@ while not gg == 3
           end
         end
         else
-          ggt = Input(kara,tools,world,app_path,menu,"","s","hintergrund schwarz/hintergrund weiss/zurück","","")
-          if ggt == "hintergrund schwarz"
+          ggt = Input(kara,tools,world,app_path,menu,"","s","Hintergrund schwarz/Hintergrund weiss/Zurück","","")
+          if ggt == "Hintergrund schwarz"
             gg = 6
-          elsif ggt == "hintergrund weiss"
+          elsif ggt == "Hintergrund weiss"
             gg = 7
-          elsif ggt == "zurück"
+          elsif ggt == "Zurück"
             gg = 1
           end
         end
@@ -406,12 +406,12 @@ while not gg == 3
           end
         end
         else
-          ggt = Input(kara,tools,world,app_path,menu,"","s","hintergrund schwarz/hintergrund weiss/zurück","","")
-          if ggt == "hintergrund schwarz"
+          ggt = Input(kara,tools,world,app_path,menu,"","s","Hintergrund schwarz/Hintergrund weiss/Zurück","","")
+          if ggt == "Hintergrund schwarz"
             gg = 8
-          elsif ggt == "hintergrund weiss"
+          elsif ggt == "Hintergrund weiss"
             gg = 9
-          elsif ggt == "zurück"
+          elsif ggt == "Zurück"
             gg = 1
           end
         end

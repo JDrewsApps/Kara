@@ -8,8 +8,8 @@ global_path = pack[5]
 ip = pack[6]
 name = pack[7]
 app_path = pack[8]
-  x = Input(kara,tools,world,app_path,menu,"gieb das passwort ein","i","","","")
-  if x == 1248
+  x = Input(kara,tools,world,app_path,menu,"gieb das passwort ein","s","","","")
+  if x == "RubyKara"
       y = Input(kara,tools,world,app_path,menu,"gieb die c Zahl ein die du haben wilst","i","","","")
       coins = y
       z = File.new(my_path+"coin.txt", "w+")
